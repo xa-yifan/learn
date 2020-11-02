@@ -1,0 +1,16 @@
+server:
+  port: 8002
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  cache:
+    type: caffeine
+    cache-names: getway
+    caffeine:
+      spec: maximumSize=5000
+efan:
+  zookeper:
+    url: 127.0.0.1:2181
